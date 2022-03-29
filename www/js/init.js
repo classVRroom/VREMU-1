@@ -38,4 +38,7 @@ function onDeviceReady() {
     //Page reload prevention
     return false;
   });
+
+    
+    
 }
