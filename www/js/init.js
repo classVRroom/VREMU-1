@@ -14,6 +14,7 @@ function onDeviceReady() {
 
   //LoginButton onclick function
   $("#loginButton").click(function () {
+    
     let pin = $("#pin").val();
     //We identify the API to be used
     let selectedAPI = $("#selectAPI option:selected").val();
@@ -26,9 +27,12 @@ function onDeviceReady() {
         M.toast({html: res.message});
       }
       else {
+        var selectedAPI = document.getElementById("selectAPI").value;
+        console.log(selectedAPI);
         localStorage.setItem('pin', pin);
         localStorage.setItem('VRexerciseID', res.VRexerciseID);
         localStorage.setItem('minExerciseVersion', res.minExerciseVersion);
+        localStorage.setItem("url2", selectedAPI);
         window.open('form.html');
       }
       console.log(res)
