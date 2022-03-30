@@ -33,7 +33,7 @@
       console.log("entra")
       $.ajax({
         method: "GET",
-        url: localStorage.getItem("url")+"/api/finish_vr_exercise",
+        url: localStorage.getItem("url2")+"/api/finish_vr_exercise",
         headers: {
           "accept": "application/json",
           "Access-Control-Allow-Origin":"*"
