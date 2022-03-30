@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS  -->
+    <style>
+        body{
+            background: rgb(230,100,101);
+            background: linear-gradient(135deg, rgba(230,100,101,1) 28%, rgba(145,152,229,1) 61%);       }  
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<!-- Page Body  -->
+<body>
+    <div class="form">
+        <h4>PIN</h4>
+        <div class="input-field col s12">
+            <input disabled id="pin" type="text" class="validate">
+            <label for="pin">PIN</label>
+        </div>
+        <h4>Autograde</h4>
+        <div class="input-field col s12">
+            <input id="passItems" type="number" class="validate">
+            <label for="passItems">Passed Items</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="failItems" type="number" class="validate">
+            <label for="failItems">Failed Items</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="score" type="number" class="validate">
+            <label for="score">Score</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="comments" type="text" class="validate">
+            <label for="comments">Comments</label>
+        </div>
+        <h4>VRExerciseID</h4>
+        <div class="input-field col s12">
+            <input disabled id="exID" type="text" class="validate">
+            <label for="exID">VRExerciseID</label>
+        </div>
+        <h4>exerciseVersionID</h4>
+        <div class="input-field col s12">
+            <input disabled id="verID" type="text" class="validate">
+            <label for="verID">exerciseVersionID</label>
+        </div>
+        <h4>Performance</h4>
+        <div class="input-field col s12">
+            <input disabled id="performance" type="text" class="validate">
+            <label for="performance">Performance</label>
+        </div>
+        <a id="formBtn" class="btn waves-effect waves-light">Send
+            <i class="material-icons right">send</i>
+        </a>
+    </div>
+    <!--  Scripts-->
+    <script src="cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init2.js"></script>
+</body>
+</html>
