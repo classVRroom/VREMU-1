@@ -26,13 +26,13 @@
     $('#verID').next().addClass('active');
 
     // Set pin
-    $('#performance').val('position_data: {}');
+    $('#performance').val(JSON.stringify({data: 'something something something'}));
     $('#performance').next().addClass('active');
 
     function send_form(){
       console.log("entra")
       $.ajax({
-        method: "GET",
+        method: "POST",
         url: localStorage.getItem("url2")+"/api/finish_vr_exercise",
         headers: {
           "accept": "application/json",
