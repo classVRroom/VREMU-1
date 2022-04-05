@@ -21,7 +21,7 @@ function onDeviceReady() {
 
     // Ajax call to the selected API
     $.get(selectedAPI + '/api/start_vr_exercise', {
-      PIN: pin
+      pin: pin
     }, function(res){
       if (res.status != 'OK'){
         M.toast({html: res.message});

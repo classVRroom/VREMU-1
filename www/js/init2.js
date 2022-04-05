@@ -36,7 +36,6 @@
         url: localStorage.getItem("url2")+"/api/finish_vr_exercise",
         headers: {
           "accept": "application/json",
-          "Access-Control-Allow-Origin":"*"
         }, // Headers. Informen a la API del tipus de trucada que s'està fent.
         data: {
           "PIN" : $("#pin").val(),
